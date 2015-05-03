@@ -1,5 +1,7 @@
 # JKSearchBar
 JKSearchBar,Custom Easy to use SearchBar like UISearchBar with UIView and UITextField
+##Demo
+![](https://raw.githubusercontent.com/shaojiankui/JKSearchBar/master/demo.gif)
 
 ##Usage
 ###by code
