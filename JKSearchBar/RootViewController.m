@@ -24,6 +24,7 @@
     self.searchBar.textColor = [UIColor blackColor];
     self.searchBar.delegate = self;
     self.searchBar.iconImage = [UIImage imageNamed:@"JKSearchBar_ICON"];
+    self.searchBar.iconAlign = JKSearchBarIconAlignCenter;
     //self.searchBar.textBorderStyle = UITextBorderStyleNone;
     //self.searchBar.keyboardType = UIKeyboardTypeDecimalPad;
     //elf.searchBar.placeholderColor = [UIColor redColor];

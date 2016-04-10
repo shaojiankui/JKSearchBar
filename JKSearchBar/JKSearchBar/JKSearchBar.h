@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSUInteger, JKSearchBarIconAlign) {
+    JKSearchBarIconAlignLeft,
+    JKSearchBarIconAlignCenter
+};
 @class JKSearchBar;
 @protocol JKSearchBarDelegate <UIBarPositioningDelegate>
 
@@ -21,7 +25,7 @@
 
 - (void)searchBarSearchButtonClicked:(JKSearchBar *)searchBar;                     // called when keyboard search button pressed
 - (void)searchBarCancelButtonClicked:(JKSearchBar *)searchBar;                     // called when cancel button pressed
-                   // called when cancel button pressed
+// called when cancel button pressed
 @end
 
 
@@ -41,16 +45,14 @@
 
 @property(nonatomic,assign) UITextBorderStyle       textBorderStyle;
 @property(nonatomic)        UIKeyboardType          keyboardType;
+@property(nonatomic)        JKSearchBarIconAlign    iconAlign;     //text aligh model
 
-//@property(nonatomic)        BOOL                    showsCancelButton;     // default is NO
 
-//@property(nonatomic,assign,getter=isTranslucent) BOOL translucent;
 @property (nonatomic, readwrite, retain) UIView *inputAccessoryView;
-@property (nonatomic, readwrite, retain)  UIView *inputView;
+@property (nonatomic, readwrite, retain) UIView *inputView;
 
-
+-(BOOL)resignFirstResponder;
 -(void)setAutoCapitalizationMode:(UITextAutocapitalizationType)type;
-
 @end
 
 
